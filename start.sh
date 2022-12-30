@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/SohanRazz/All-rounder-search-bot /All-rounder-search-bot
+  git clone https://github.com/Gourav1255/file-url-bot /file-url-bot
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /All-rounder-search-bot
+  git clone $UPSTREAM_REPO /file-url-bot
 fi
-cd /All-rounder-search-bot
+cd /file-url-bot
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 python3 bot.py
